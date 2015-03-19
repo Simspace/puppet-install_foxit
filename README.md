@@ -1,4 +1,4 @@
-# TODO
+# install_foxit
 
 #### Table of Contents
 1. [Overview](#overview)
@@ -7,14 +7,17 @@
 4. [Development](#development)
 
 ## Overview
-TODO
+This module will install Foxit Read 7 silently on a Windows host.
 
 ## Description
+In params.pp is the location to the installer.
+In your site.pp
+```puppet
+node 'cheese.com' {
+  class {'install_foxit':}
+}
+```
 
 ## Dependencies
-stdlib
-
-This module uses a development version of rspec-puppet. Running rake spec alone will probably fail. Instead, run ```bundle exec rake```
-
-## Development
-contribute at: TODO
+staging
+ACL
