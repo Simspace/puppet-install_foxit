@@ -17,7 +17,7 @@ class install_foxit (
         }
 
 
-        package { 'Foxit':
+        package { 'Foxit Reader':
           ensure => installed,
           source => "${staging_windir}\\install_foxit\\${exe}",
           require => [ Staging::File[$exe], Acl["${staging_windir}/install_foxit/${exe}"] ],
